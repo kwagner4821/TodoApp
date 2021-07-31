@@ -1,10 +1,12 @@
 .App {
   text-align: center;
+  height: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Button{
+  text-align: center;
+  position: relative;
+  top: 50%;
 }
 
 @media (prefers-reduced-motion: no-preference) {

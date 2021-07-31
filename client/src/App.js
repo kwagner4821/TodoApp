@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
+import Form from './Form.js';
+import Todo from './Todo.js';
 import './App.css';
 
 function App() {
+  function handleClick(e){
+    e.preventDefault();
+    console.log('You clicked submit.');
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className = "Button">
+        <Form />
+      </div>
+      <Todo />
     </div>
   );
 }
