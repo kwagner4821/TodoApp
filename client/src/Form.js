@@ -14,7 +14,7 @@ function Form(props){
     }
     
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
           <h2 className="label-wrapper">
             <label htmlFor="new-todo-input" className="label__lg">
               Todo List
@@ -26,6 +26,7 @@ function Form(props){
             className="input input__lg"
             name="text"
             autoComplete="off"
+            onChange = {handleChange}
           />
           <button type="submit" className="btn btn__primary btn__lg">
             Add

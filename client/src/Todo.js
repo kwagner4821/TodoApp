@@ -1,10 +1,18 @@
 import React from 'react';
 
-export default function Todo(){
+export default function Todo(props){
     return (
-        <div>
-            <label>Buy a TeslaBuy a TeslaBuy a TeslaBuy a TeslaBuy a TeslaBuy a TeslaBuy a TeslaBuy a Tesla</label>
+        <li>
+            <div>
+            <label htmlFor = {props.id}>{props.name}</label>
             <button>Edit</button>
-        </div>
+            <button
+                type="button"
+                onClick = {() => props.deleteTask(props.id)}
+            >
+                Delete</button>
+            </div>
+        </li>
+        
     )
 }
